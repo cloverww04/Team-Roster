@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { Button } from 'react-bootstrap';
+import { useRouter } from 'next/router';
 import { getTeam } from '../api/teamData';
 import { useAuth } from '../utils/context/authContext';
 import TeamCard from '../components/TeamCard';
@@ -9,14 +10,20 @@ import TeamCard from '../components/TeamCard';
 function MyTeam() {
   const [team, setTeam] = useState([]);
   const { user } = useAuth();
-
-  const getAllTheMembers = () => {
-    getTeam(user.uid).then(setTeam);
+  const router = useRouter();
+  const { search } = router.query;
+  const getAllTheMembers = (searchInput) => {
+    getTeam(user.uid).then((data) => {
+      if (searchInput) {
+        const searchedData = data.filter((obj) => obj.name.toLowerCase().includes(searchInput.toLowerCase()));
+        setTeam(searchedData);
+      } else setTeam(data);
+    });
   };
 
   useEffect(() => {
-    getAllTheMembers();
-  }, []);
+    getAllTheMembers(search);
+  }, [search]);
 
   return (
     <div className="text-center my-4">
