@@ -21,11 +21,11 @@ function TeamCard({ teamObj, onUpdate }) {
         <p className="card-text bold">Role:  {teamObj.role}</p>
         {/* DYNAMIC LINK TO VIEW THE TEAM DETAILS  */}
         <Link href={`/team/${teamObj.firebaseKey}`} passHref>
-          <Button size="lg" variant="flat" className="m-2">VIEW</Button>
+          <Button size="lg" variant="primary" style={{ flex: 1, marginBottom: 0 }}>View</Button>
         </Link>
         {/* DYNAMIC LINK TO EDIT THE TEAM DETAILS  */}
         <Link href={`/team/edit/${teamObj.firebaseKey}`} passHref>
-          <Button size="lg" variant="info">EDIT</Button>
+          <Button size="lg" variant="info" style={{ flex: 1, marginLeft: 20 }}>EDIT</Button>
         </Link>
         <Button size="lg" variant="danger" onClick={deleteThisMember} className="m-2">
           DELETE
