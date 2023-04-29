@@ -1,5 +1,6 @@
 @import 'bootstrap/dist/css/bootstrap.css';
-@import url('https://fonts.cdnfonts.com/css/alien-league-2');
+/* @import url('https://fonts.cdnfonts.com/css/alien-league-2'); */
+@import url('https://fonts.cdnfonts.com/css/oldtimer');
 
 
 html,
@@ -25,7 +26,9 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  font-family: 'Alien League II Bold', sans-serif;
+  /* font-family: 'Alien League II Bold', sans-serif; */
+  font-family: 'Oldtimer', sans-serif;
+                                                
 }
 
 canvas {
@@ -49,9 +52,14 @@ p {
   text-shadow: 1px 1px 2px white, 2px 2px 5px black;
 }
 
-.btn-flat {
+.btn {
+  box-shadow: 0 5px 15px rgba(145, 82, 182, .4);
+}
+
+.btn-primary {
   background: rgb(103,103,212);
 background: radial-gradient(circle, rgba(103,103,212,1) 0%, rgba(29,44,61,1) 100%);
+box-shadow: 0 5px 15px rgba(145, 82, 182, .4);
 }
 
 .btn-danger {
@@ -100,8 +108,10 @@ footer {
 }
 
 input:focus {
-  outline: none;
+  outline:azure;
 }
 .searchIcon svg {
   font-size: 30px
 }
+
+

@@ -35,12 +35,16 @@ function Home() {
         <h1>Hello {user.displayName}! </h1>
         <p>
           <Link href="/viewTeam" passHref>
-            <Button size="lg" variant="flat" style={{ flex: 1, marginBottom: 0 }}>View Team</Button>
+            <Button size="lg" variant="primary" style={{ flex: 1, marginBottom: 0 }}>View Team</Button>
           </Link>
           <Link href="/team/new" passHref>
-            <Button size="lg" variant="flat" style={{ flex: 1, marginLeft: 20 }}>Get Started</Button>
+            <Button size="lg" variant="primary" style={{ flex: 1, marginLeft: 20 }}>Get Started</Button>
           </Link>
         </p>
+        <br />
+        <br />
+        <br />
+        <br />
         <p>Click the button below to logout!</p>
         <Button variant="danger" type="button" size="lg" className="copy-btn" onClick={signOut}>
           Sign Out

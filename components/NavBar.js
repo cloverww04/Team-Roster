@@ -26,11 +26,11 @@ export default function NavBar() {
             <Link passHref href="/team/new">
               <Nav.Link className="custom-logo">Add Member</Nav.Link>
             </Link>
-            <Button className="custom-logo" variant="danger" onClick={signOut}>Sign Out</Button>
           </Nav>
           <SearchBar />
         </Navbar.Collapse>
       </Container>
+      <Button className="custom-logo" variant="danger" onClick={signOut}>Sign Out</Button>
     </Navbar>
   );
 }
