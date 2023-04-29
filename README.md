@@ -14,7 +14,7 @@ Team-Roster allows users to build their own custom trading card team. You can bu
 - User authenticated
 
 # Links to project
-[My GitHub](https://github.com/cloverww04/Team-Roster)
+[Team-Roster](https://github.com/cloverww04/Team-Roster)
 
 # Screenshots
 - ![welcomePage](https://user-images.githubusercontent.com/84203439/235316948-2c778a37-1bc6-49b6-a3c7-a8713629ef40.PNG) 
@@ -23,4 +23,4 @@ Team-Roster allows users to build their own custom trading card team. You can bu
 
 # Profile
 
-[Nathan Clover](https://github.com/cloverww04/Team-Roster)
+[Nathan Clover](https://github.com/cloverww04)
